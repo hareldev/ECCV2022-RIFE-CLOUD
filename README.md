@@ -1,3 +1,35 @@
+# Run Video interpolation Online on the cloud
+
+## What is video interpolation, and how is AI related?
+When trying to increase FPS (Frames Per Second) of an existing video, from 30fps to 60fps, for example, video interpolation will allow you adding these "missing" frames to a video.
+
+These frames would need to be created by checking the previous + next frame, comparing them, and creating a new frame with the proper data.
+
+AI is used to run this kind of calculation, which is very demanding from hardware perspective, specifically GPU power, and VRAM. In many cases, users would need to upgrade their GPU, or use their gaming PC video card for this purpose.
+
+## Why cloud?
+Using cloud resources will allow you to run the heavy lifting (all AI calculation) on another server. The output file would then be uploaded where you could download it when ready.
+
+This approach will allow you running this process on virtually any PC or OS, including your laptop / Mac.
+
+## Prices
+Running cloud workloads may vary in terms of pricing, and is based on [Type of hardware] x [time used].
+
+
+<br/>
+
+# Let's start working!
+## Steps
+  1. Upload your `mp4` file to 
+     asdasd
+     asdasdad
+  2. asda
+  3.
+
+asdas
+
+
+
 # Real-Time Intermediate Flow Estimation for Video Frame Interpolation
 ## Introduction
 This project is the implement of [Real-Time Intermediate Flow Estimation for Video Frame Interpolation](https://arxiv.org/abs/2011.06294). Currently, our model can run 30+FPS for 2X 720p interpolation on a 2080Ti GPU. It supports arbitrary-timestep interpolation between a pair of images. 
