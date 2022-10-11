@@ -20,10 +20,12 @@ Running cloud workloads may vary in terms of pricing, and is based on [Type of h
 
 # Let's start working!
 ## Steps
-  1. Upload your `mp4` file to 
-     asdasd
-     asdasdad
-  2. asda
+  1. Upload your `mp4` file to a publicly available location \
+  We will use this location on the next steps to download this file directly to the server we will use. \
+  Notice this file should be accessible directly, i.e. link should end with `...filename.mp4` \
+  Make sure link works by clicking on it, and see it works and start downloading the file.
+
+  2. 
   3.
 
 asdas
