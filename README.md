@@ -25,13 +25,16 @@ Running cloud workloads may vary in terms of pricing, and is based on [Type of h
   Notice this file should be accessible directly, i.e. link should end with `...filename.mp4` \
   Make sure link works by clicking on it, and see it works and start downloading the file.
 
-  2. 
-  3.
+  2. Prepare your cloud VM \
+    1. Create an account (or use existing one) of Vultr, Linode. Both have options of GPU VMs with plenty of VRAM, charged by usage (hr). \
+    2. VM size: Select the most appropriate plan for you (check the benchmark page for reference). \
+    3. OS: Select Fedora 36, we will install docker + NVIDIA drivers later. \
+    Once all ready - go and create the VM. \
+    4. When VM is ready, login to it using SSH, if you're a windows user, you could use putty client. \
+
+  3. 
   4. 
   5. added fifth
-
-asdas
-
 
 
 # Real-Time Intermediate Flow Estimation for Video Frame Interpolation
