@@ -4,7 +4,7 @@ ENV VIDEO_TO_PROCESS="https://my.file.to.download.com/filename.mp4"
 
 # install deps
 RUN apt-get update && apt-get -y install \
-    bash ffmpeg wget curl
+    bash ffmpeg wget curl unzip
 
 # setup RIFE
 WORKDIR /rife
@@ -17,12 +17,8 @@ RUN chmod +x /usr/local/bin/inference_img
 ADD docker/inference_video /usr/local/bin/inference_video
 RUN chmod +x /usr/local/bin/inference_video
 
-ARG SCRIPT_FOLDER="/rife/scripts"
-ADD docker/scripts/main.sh $SCRIPT_FOLDER/main.sh
-RUN chmod +x $SCRIPT_FOLDER/main.sh
-ADD docker/scripts/install-pip-req.sh $SCRIPT_FOLDER/install-pip-req.sh
-RUN chmod +x $SCRIPT_FOLDER/install-pip-req.sh
-ADD requirements.txt $SCRIPT_FOLDER/requirements.txt
+ARG SCRIPT_FOLDER="/rife/docker/scripts"
+RUN chmod +x $SCRIPT_FOLDER/*
 
 # add pre-trained models (for testing, will be done in a script)
 # ADD /mnt/f/Repos/ECCV2022-RIFE-CLOUD/vimeo/vimeo_triplet /rife/train_log
