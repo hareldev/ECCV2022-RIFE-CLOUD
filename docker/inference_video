@@ -1,2 +1,5 @@
-#!/bin/sh
-python3 /rife/inference_video.py $@
+#!/bin/bash
+
+pushd /rife > '/dev/null';
+python3 inference_video.py $@
+popd  > '/dev/null';

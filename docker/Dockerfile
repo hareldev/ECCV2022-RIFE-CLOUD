@@ -20,9 +20,6 @@ RUN chmod +x /usr/local/bin/inference_video
 ARG SCRIPT_FOLDER="/rife/docker/scripts"
 RUN chmod +x $SCRIPT_FOLDER/*
 
-# add pre-trained models (for testing, will be done in a script)
-# ADD /mnt/f/Repos/ECCV2022-RIFE-CLOUD/vimeo/vimeo_triplet /rife/train_log
-
 WORKDIR /host
 ENTRYPOINT ["/bin/bash"]
 
